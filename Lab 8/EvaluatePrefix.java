@@ -31,7 +31,7 @@ public class EvaluatePrefix{
         return false;
     }
 
-    public boolean checkPostfix(String infix){
+    public boolean checkPrefix(String infix){
         int rank=0;
 
         for(char ch: infix.toCharArray()){
@@ -59,7 +59,7 @@ public class EvaluatePrefix{
         System.out.println("Enter the Prefix Expression: ");
         String infix=sc.nextLine();
 
-        if(!ep.checkPostfix(infix)){
+        if(!ep.checkPrefix(infix)){
             System.out.println("Expression is InValid");
             System.exit(1);
         }
